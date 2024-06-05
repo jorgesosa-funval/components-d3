@@ -31,7 +31,11 @@ export default function App() {
       />
 
       {openModal &&
-        <Modal showModal={showModal} />
+        <Modal
+          showModal={showModal}
+          setContacts={setContacts}
+          contacts={contacts}
+        />
       }
 
     </>
